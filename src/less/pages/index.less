@@ -1,0 +1,51 @@
+/*竖屏模式*/
+.home {
+  .home-container {
+    display: grid;
+    .router {
+      color: #c6c6c6;
+      background-color: #41434b;
+      .px2px(font-size,40); /* no*/
+      text-decoration: none;
+      background-size: 100px 100px;
+      background-position: center 40px;
+      .title {
+        margin-top: 155px;
+        text-align: center;
+        color: #c6c6c6;
+      }
+    }
+  }
+}
+@media screen and (orientation: portrait) {
+  .home {
+    .home-container {
+      margin-top: 80px;
+      margin-left: 35px;
+      margin-right: 35px;
+      grid-template-columns: 320px 320px;
+      grid-template-rows: 240px 240px 240px;
+      justify-content: space-around;
+      // grid-column-gap: 35px;
+      grid-row-gap: 40px;
+      border-radius: 6px;
+    }
+  }
+}
+/*横屏模式*/
+@media screen and (orientation: landscape) {
+  .home {
+    .home-container {
+      margin-top: 55px;
+      margin-bottom: 55px;
+      margin-left: 35px;
+      margin-right: 35px;
+      grid-template-columns: 320px 320px 320px;
+      grid-template-rows: 240px 240px;
+      // grid-column-gap: 90px;
+      grid-row-gap: 140px;
+      justify-content: space-around;
+      border-radius: 6px;
+    }
+  }
+}

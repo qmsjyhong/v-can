@@ -1,0 +1,69 @@
+/*progress*/
+.mt-range {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  .mt-range-thumb {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.vx-progress {
+  color: #fff;
+  border-bottom: 1px #4f5054 solid; /*no*/
+  margin-top: 20px;
+  padding-bottom: 30px;
+  // text-indent: 0.35rem;
+  .title-box {
+    height: 50px;
+    position: relative;
+    .title {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: inherit;
+    }
+    .number {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 250px;
+    }
+    .title,
+    .number {
+      color: #fff;
+      height: 50px;
+      line-height: 50px;
+      font-size: 15px; /* no*/
+    }
+    .plusminus {
+      position: absolute;
+      top: 0;
+      height: inherit;
+      width: 190px;
+      border: 1px solid #aaaaaa; /* no*/
+      display: flex;
+      border-radius: 5px;
+      width: 190px;
+      right: 35px;
+      .plus,
+      .minus {
+        display: block;
+        flex: 1;
+        img {
+          width: 28px;
+          height: 28px;
+        }
+      }
+      .plus {
+        border-left: 1px solid #aaaaaa; /* no*/
+      }
+    }
+  }
+  .progress-box {
+    padding: 0 35px;
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,359 @@
+.selectScreenMode {
+		.screen{
+			// padding: 30px 0 0 0;
+			.screen_list_content {
+			width: 100%;
+			padding: 35px;
+			display: flex;
+			justify-content: space-between;
+			background: #383940;
+			color: #fff;
+			box-sizing: border-box;
+			.px2px(font-size, 64);
+		}
+			.screen_list_text {
+				color: #b1b1b1;
+				text-align: left;
+				padding:12px 27px;
+				box-sizing: border-box;
+				.px2px(font-size, 40);
+			}
+	}
+	.networkPort_layout {
+		.networkProt_list {
+			padding: 50px 35px;
+			box-sizing: border;
+			color: #fff;
+			overflow: hidden;
+			> div {
+				width: 130px;
+				height: 109px;
+				background: #41434b;
+				float: left;
+				margin-left: 33px;
+				margin-bottom: 45px;
+				line-height: 109px;
+				border: 1px solid #121116;
+				.px2px(font-size, 40);
+			}
+			.active {
+				border: 1px solid #e67007;
+				color: #e67007;
+			}
+		}
+	}
+	.selectBoxStructure_layout {
+		.selectBoxStructure_content {
+			.selectBoxStructure_content_title {
+				width: 100%;
+				height: 440px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				> div {
+					width: 85%; 
+					height: 342px; 
+					background: #2c2c2f;
+					border-radius: 10px;
+					// border: 1px solid #808080; /*no*/
+					border-top: none;
+					border-left: none;
+					position: relative;
+					.item1 {
+						position: absolute;
+						z-index: 2;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+						> div:nth-child(1) {
+							border-radius: 10px;
+						}
+						>div {
+							width: 100%;
+							height: 1px; /*no*/
+							background: #808080;
+						}
+					}
+					.item2 {
+						position: absolute;
+						z-index: 1;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						display: flex;
+						justify-content: space-between;
+						> div:nth-child(1) {
+							border-radius: 10px;
+						}
+						>div {
+							width: 1px; /*no*/
+							height: 100%;
+							background: #808080;
+						}
+					}
+				}
+			}
+			.selectBoxStructure_content_list {
+			  line-height: 60px;
+		    text-align: left;
+		    text-indent: 35px;
+		    padding-top: 20px;
+		    background: #383940;
+		    .px2px(font-size,48);
+				.vx-progress {
+					color: #a8a8aa;
+				}
+			}
+		}
+	}
+	.screenResolution_layout{
+		.screenResolution_content{
+			.screenResolution_content_title {
+				width: 750px;
+				height: 440px;
+			}
+			.screenResolution_content_list {
+		    line-height: 60px;
+		    text-align: left;
+		    text-indent: 35px;
+		    padding-top: 20px;
+		    background: #383940;
+		    .px2px(font-size, 48);
+			    .vx-progress{
+						color: #a8a8aa;
+			    }
+			}
+		}
+	}
+	.capacityLayout {
+		.capacity-content {
+			// margin-top: 30px;
+			.selectBoxStructure_content_list {
+				line-height: 60px;
+			    text-align: left;
+			    text-indent: 35px;
+			    padding-top: 20px;
+			    background: #383940;
+			    .px2px(font-size, 48);
+		     .vx-progress{
+					color: #a8a8aa;
+		    }
+			}
+		}
+		
+	}
+	.advancedScreen {
+		&-title {
+			padding: 22px 35px;
+			color: #aeaeae;
+			text-align: left;
+			.px2px(font-size, 48);
+		}
+		&-list {
+			color: #dddddd;
+			background: #383940;
+			.px2px(font-size, 60);
+			.screen_name, .screen_address {
+				padding: 34px 35px;
+				overflow: hidden;
+				border-bottom: 1px solid #4f5054;
+				> div {
+					float: left;
+				}
+				> div:nth-child(2) {
+					margin-left: 121px;
+				}
+			}
+			.receiveCard {
+				padding: 18px 35px;
+				overflow: hidden;
+				border-bottom: 1px solid #4f5054;
+				display: flex;
+				justify-content: space-between;
+				> div {
+					float: left;
+				}
+				> div:nth-child(1) {
+					margin-top: 12px;
+					width: 30%;
+					text-align: left;
+				}
+				> div:nth-child(2) {
+					// margin-left: 72px;
+					width: 70%;
+					height: 148px;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					> div {
+						>span:nth-child(1) {
+							display: inline-block;
+							width: 53px;
+						}
+					}
+					 input {
+						width: 199px;
+						height: 65px;
+						padding: 24px 23px;
+						box-sizing: border-box;
+						outline: none;
+						border: 1px solid #fff;
+						border-radius: 6px;
+						margin-left: 50px;
+						margin-right: 20px;
+						background: none;
+						color: #fff;
+					}
+				}
+			}
+			.routeOrder {
+				padding: 18px 35px;
+				overflow: hidden;
+				border-bottom: 1px solid #4f5054;
+				> div:nth-child(1) {
+					width: 32%;
+					text-align: left;
+				}
+				> div:nth-child(2) {
+					width: 68%;
+					height: 242px;
+					> div {
+						float: left;
+						margin-right: 7px;
+						margin-bottom: 30px;
+						width: 99px;
+						height: 100px;
+					}
+				}
+				.normal_img1 {
+		 		background:url('../../assets/selectRouMethod/v1-normal.png') center center /cover; 
+			 	}
+			 	.select_img1 {
+			 		background:url('../../assets/selectRouMethod/v1-pressed.png') center center /cover;
+			 	}
+			 	.normal_img2 {
+			 		background: url('../../assets/selectRouMethod/v2-normal.png') center center /cover;
+			 	}
+			 	.select_img2 {
+			 		background:url('../../assets/selectRouMethod/v2-pressed.png') center center /cover;
+			 	}
+			 	.normal_img3 {
+			 		background: url('../../assets/selectRouMethod/v3-normal.png') center center /cover;
+			 	}
+			 	.select_img3 {
+			 		background:url('../../assets/selectRouMethod/v3-pressed.png') center center /cover;
+			 	}
+			 	.normal_img4 {
+			 		background: url('../../assets/selectRouMethod/v4-normal.png') center center /cover;
+			 	}
+			 	.select_img4 {
+			 		background:url('../../assets/selectRouMethod/v4-pressed.png') center center /cover;
+			 	}
+			 	.normal_img5 {
+			 		background: url('../../assets/selectRouMethod/v5-normal.png') center center /cover;
+			 	}
+			 	.select_img5 {
+			 		background:url('../../assets/selectRouMethod/v5-pressed.png') center center /cover;
+			 	}
+			 	.normal_img6 {
+			 		background: url('../../assets/selectRouMethod/v6-normal.png') center center /cover;
+			 	}
+			 	.select_img6 {
+			 		background:url('../../assets/selectRouMethod/v6-pressed.png') center center /cover;
+			 	}
+			 	.normal_img7 {
+			 		background: url('../../assets/selectRouMethod/v7-normal.png') center center /cover;
+			 	}
+			 	.select_img7 {
+			 		background:url('../../assets/selectRouMethod/v7-pressed.png') center center /cover;
+			 	}
+			 	.normal_img8 {
+			 		background: url('../../assets/selectRouMethod/v8-normal.png') center center /cover;
+			 	}
+			 	.select_img8 {
+			 		background:url('../../assets/selectRouMethod/v8-pressed.png') center center /cover;
+			 	}
+			}
+
+		}
+	}
+	.routeMethods_layout {
+		 .methods_list {
+		 	> div {
+		 		overflow: hidden;
+			 	height: 255px;
+			 	width: 100%;
+			 	background: #383940;
+		 		> div {
+		 			width: 100px;
+			 		height: 100px;
+			 		float: left;
+			 		margin-left:66px;
+			 		margin-top: 16px;
+		 		}
+		 	}
+		 	.normal_img1 {
+		 		background:url('../../assets/selectRouMethod/v1-normal.png') center center /cover; 
+		 	}
+		 	.select_img1 {
+		 		background:url('../../assets/selectRouMethod/v1-pressed.png') center center /cover;
+		 	}
+		 	.normal_img2 {
+		 		background: url('../../assets/selectRouMethod/v2-normal.png') center center /cover;
+		 	}
+		 	.select_img2 {
+		 		background:url('../../assets/selectRouMethod/v2-pressed.png') center center /cover;
+		 	}
+		 	.normal_img3 {
+		 		background: url('../../assets/selectRouMethod/v3-normal.png') center center /cover;
+		 	}
+		 	.select_img3 {
+		 		background:url('../../assets/selectRouMethod/v3-pressed.png') center center /cover;
+		 	}
+		 	.normal_img4 {
+		 		background: url('../../assets/selectRouMethod/v4-normal.png') center center /cover;
+		 	}
+		 	.select_img4 {
+		 		background:url('../../assets/selectRouMethod/v4-pressed.png') center center /cover;
+		 	}
+		 	.normal_img5 {
+		 		background: url('../../assets/selectRouMethod/v5-normal.png') center center /cover;
+		 	}
+		 	.select_img5 {
+		 		background:url('../../assets/selectRouMethod/v5-pressed.png') center center /cover;
+		 	}
+		 	.normal_img6 {
+		 		background: url('../../assets/selectRouMethod/v6-normal.png') center center /cover;
+		 	}
+		 	.select_img6 {
+		 		background:url('../../assets/selectRouMethod/v6-pressed.png') center center /cover;
+		 	}
+		 	.normal_img7 {
+		 		background: url('../../assets/selectRouMethod/v7-normal.png') center center /cover;
+		 	}
+		 	.select_img7 {
+		 		background:url('../../assets/selectRouMethod/v7-pressed.png') center center /cover;
+		 	}
+		 	.normal_img8 {
+		 		background: url('../../assets/selectRouMethod/v8-normal.png') center center /cover;
+		 	}
+		 	.select_img8 {
+		 		background:url('../../assets/selectRouMethod/v8-pressed.png') center center /cover;
+		 	}
+		 }
+	}
+	.quickScreen_title {
+		padding: 0 35px;
+		height: 61px;
+		color: #aeaeae;
+		text-align: left;
+		.px2px(font-size, 48);
+		line-height: 61px;
+	}
+}
+
